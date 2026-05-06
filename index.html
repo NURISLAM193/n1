@@ -5,7 +5,24 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <title>Klothink Fashion Store</title>
 
-  <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary:      '#FACC15',
+            secondary:    '#030712',
+            headingColor: '#111827',
+            textColor:    '#4B5563',
+            lightBg:      '#F9FAFB',
+            borderColor:  '#F3F4F6',
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
   <link rel="stylesheet" href="./output.css">
   <script src="./ui.js" defer></script>
 </head>
@@ -18,31 +35,31 @@
   <nav class=" top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100" data-purpose="main-nav">
     <div class="max-w-7xl mx-auto px-12 py-4 flex items-center justify-between">
       <div class="hidden md:flex items-center gap-2">
-        <a class="pill-link is-active" href="#hero">Home</a>
-        <a class="pill-link" href="#products">Products</a>
+        <a class="pill-link is-active" href="https://nurislam193.github.io/n1/">Home</a>
+        <a class="pill-link" href="https://nurislam193.github.io/n2/">Products</a>
       </div>
 
       <button id="mobile-menu-button" class="md:hidden text-gray-900 p-2 rounded-full border border-gray-200" aria-expanded="false" aria-controls="mobile-menu" type="button">
         <i class="fa-solid fa-bars text-xl"></i>
       </button>
 
-      <a class="flex items-center" data-purpose="brand-logo" href="#hero">
+      <a class="flex items-center" data-purpose="brand-logo" href="https://nurislam193.github.io/n1/">
         <img alt="Klothink Logo" class="h-8 w-auto" src="./images/Group.png">
       </a>
 
       <div class="flex items-center gap-3">
-        <button aria-label="Cart" class="w-10 h-10 rounded-full bg-yellow-400 flex items-center justify-center text-gray-950 hover:bg-yellow-300 transition-colors" type="button">
+        <button aria-label="Cart" class="w-10 h-10 rounded-full bg-yellow-400 flex items-center justify-center text-gray-950 hover:bg-yellow-300 transition-colors" type="button" onclick="window.location.href='https://nurislam193.github.io/n3/'">
           <i class="fa-solid fa-cart-shopping text-sm"></i>
         </button>
-        <a class="hidden md:flex px-6 py-2.5 rounded-full border border-gray-200 text-gray-900 font-bold text-sm hover:bg-gray-50 transition-colors" href="#">Contact Support</a>
+        <a class="hidden md:flex px-6 py-2.5 rounded-full border border-gray-200 text-gray-900 font-bold text-sm hover:bg-gray-50 transition-colors" href="https://nurislam193.github.io/n4/">Contact Support</a>
       </div>
     </div>
 
     <div id="mobile-menu" class="hidden md:hidden border-t border-gray-100 bg-white">
       <div class="px-5 py-4 flex flex-col gap-2 text-sm font-bold text-gray-900">
-        <a class="mobile-link" href="#hero">Home</a>
-        <a class="mobile-link" href="#products">Products</a>
-        <a class="mobile-link" href="#">Contact Support</a>
+        <a class="mobile-link" href="https://nurislam193.github.io/n1/">Home</a>
+        <a class="mobile-link" href="https://nurislam193.github.io/n2/">Products</a>
+        <a class="mobile-link" href="https://nurislam193.github.io/n4/">Contact Support</a>
       </div>
     </div>
   </nav>
@@ -151,7 +168,7 @@
                 <button class="size-chip" type="button">XL</button>
               </div>
               <div class="w-px h-4 bg-gray-200 mx-1 shrink-0"></div>
-              <a class="ml-auto text-xs font-bold text-gray-900 hover:text-yellow-500 transition-colors flex items-center gap-1 whitespace-nowrap" href="#">
+              <a class="ml-auto text-xs font-bold text-gray-900 hover:text-yellow-500 transition-colors flex items-center gap-1 whitespace-nowrap" href="https://nurislam193.github.io/n3/">
                 View Similar <span class="text-sm">→</span>
               </a>
             </div>
@@ -176,7 +193,7 @@
           </div>
           
           
-          <button class="px-8 py-3.5 bg-yellow-400 text-gray-950 font-bold text-sm rounded-full hover:bg-yellow-300 transition-colors whitespace-nowrap shadow-sm" type="button">
+          <button class="px-8 py-3.5 bg-yellow-400 text-gray-950 font-bold text-sm rounded-full hover:bg-yellow-300 transition-colors whitespace-nowrap shadow-sm" type="button" onclick="window.location.href='https://nurislam193.github.io/n2/'">
             View All Products
           </button>
         </div>
@@ -560,7 +577,7 @@
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12 mb-20">
 
 <div class="lg:col-span-2 space-y-8">
-<a class="flex items-center gap-2" href="#">
+<a class="flex items-center gap-2" href="https://nurislam193.github.io/n1/">
 <img alt="Klothink Logo" class="h-12 w-auto" src="./images/Group.png"/>
 </a>
 <form class="flex gap-2 max-w-sm w-full" data-purpose="newsletter-form">
