@@ -1,0 +1,156 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: Manrope, Arial, sans-serif;
+  --color-primary: #facc15;
+  --color-secondary: #030712;
+  --color-headingColor: #111827;
+  --color-textColor: #4b5563;
+  --color-lightBg: #f9fafb;
+  --color-borderColor: #f3f4f6;
+}
+
+@layer base {
+  body {
+    background: #fff;
+  }
+
+  .fa-solid,
+  .fa-brands,
+  .fa-regular {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .fa-arrow-right::before { content: "\f061"; }
+  .fa-arrow-up-right-from-square::before { content: "\f08e"; }
+  .fa-bag-shopping::before { content: "\f290"; }
+  .fa-bars::before { content: "\f0c9"; }
+  .fa-bolt::before { content: "\f0e7"; }
+  .fa-bullseye::before { content: "\f140"; }
+  .fa-car::before { content: "\f1b9"; }
+  .fa-cart-shopping::before { content: "\f07a"; }
+  .fa-chevron-left::before { content: "\f053"; }
+  .fa-chevron-right::before { content: "\f054"; }
+  .fa-facebook::before { content: "\f09a"; }
+  .fa-female::before { content: "\f182"; }
+  .fa-globe::before { content: "\f0ac"; }
+  .fa-heart::before { content: "\f004"; }
+  .fa-leaf::before { content: "\f06c"; }
+  .fa-linkedin::before { content: "\f0e1"; }
+  .fa-long-arrow-right::before { content: "\f178"; }
+  .fa-phone::before { content: "\f095"; }
+  .fa-plus::before { content: "\f067"; }
+  .fa-star::before { content: "\f005"; }
+  .fa-twitter::before { content: "\f099"; }
+  .fa-user::before { content: "\f007"; }
+  .fa-xmark::before { content: "\f00d"; }
+}
+
+@layer components {
+  .pill-link {
+    @apply px-5 py-2.5 rounded-full text-gray-600 font-bold text-sm hover:bg-gray-50 transition-colors;
+  }
+
+  .pill-link.is-active {
+    @apply bg-gray-100 text-gray-900 hover:bg-gray-200;
+  }
+
+  .mobile-link {
+    @apply px-4 py-3 rounded-xl hover:bg-gray-50 transition-colors;
+  }
+
+  .hero-arrow {
+    @apply w-8 h-8 rounded-full bg-white border border-gray-100 flex items-center justify-center text-gray-400 shadow-sm hover:text-gray-900 transition-colors;
+  }
+
+  .hero-arrow-active {
+    @apply bg-gray-950 border-gray-950 text-white hover:bg-black hover:text-white;
+  }
+
+  .hero-tag {
+    @apply absolute px-3 py-1.5 bg-white rounded-full text-[10px] font-semibold text-gray-800 shadow-md whitespace-nowrap;
+  }
+
+  .color-dot {
+    @apply w-3.5 h-3.5 rounded-full transition-transform hover:scale-110 ring-2 ring-transparent;
+  }
+
+  .color-dot-active {
+    @apply ring-gray-900;
+  }
+
+  .size-chip {
+    @apply w-6 h-6 rounded-full text-[10px] font-semibold text-gray-500 hover:bg-gray-100 transition-colors;
+  }
+
+  .size-chip-active {
+    @apply bg-gray-950 text-white hover:bg-black;
+  }
+
+  .tab-button {
+    @apply pb-4 text-gray-400 hover:text-gray-900 transition-colors whitespace-nowrap uppercase tracking-wide border-b-2 border-transparent;
+  }
+
+  .tab-active {
+    @apply text-gray-900 border-gray-900;
+  }
+
+  .chip-button {
+    @apply px-6 py-2.5 bg-white border border-gray-200 text-gray-900 rounded-full text-[13px] font-bold hover:bg-gray-50 transition-colors;
+  }
+
+  .chip-active {
+    @apply bg-gray-950 text-white border-gray-950 hover:bg-black;
+  }
+
+  .product-card {
+    @apply relative;
+  }
+
+  .product-image-wrap {
+    @apply bg-gray-50 rounded-2xl p-6 mb-4 aspect-square flex items-center justify-center relative overflow-hidden;
+  }
+
+  .product-image {
+    @apply w-full h-full object-contain mix-blend-multiply transition-transform group-hover:scale-105;
+  }
+
+  .product-cart-button {
+    @apply absolute bottom-4 right-4 w-10 h-10 bg-yellow-400 text-gray-950 rounded-full shadow-md flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all transform translate-y-2 group-hover:translate-y-0;
+  }
+
+  .product-title {
+    @apply font-bold text-gray-900 text-[15px] mb-1;
+  }
+
+  .product-price {
+    @apply text-gray-500 font-medium text-[15px];
+  }
+
+  .pager-arrow {
+    @apply w-10 h-10 rounded-full border border-gray-200 bg-white flex items-center justify-center text-gray-500 hover:bg-gray-50 transition-colors;
+  }
+
+  .pager-arrow-active {
+    @apply bg-gray-950 border-gray-950 text-white hover:bg-black;
+  }
+
+  .pager-arrow-disabled {
+    @apply opacity-40 cursor-not-allowed pointer-events-none;
+  }
+
+  .progress-track {
+    width: 25%;
+    transition: width 220ms ease;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-section {
+    background-image: linear-gradient(to bottom, #ffffff 0%, #fafafa 100%);
+  }
+}
