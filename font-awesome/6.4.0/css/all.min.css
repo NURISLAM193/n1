@@ -1,0 +1,29 @@
+@import url("../../css/font-awesome.min.css");
+
+.fa-solid,
+.fa-brands {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-arrow-up-right-from-square:before { content: "\f08e"; }
+.fa-cart-shopping:before { content: "\f07a"; }
+.fa-bars:before { content: "\f0c9"; }
+.fa-bag-shopping:before { content: "\f290"; }
+.fa-chevron-left:before { content: "\f053"; }
+.fa-chevron-right:before { content: "\f054"; }
+.fa-star:before { content: "\f005"; }
+.fa-bullseye:before { content: "\f140"; }
+.fa-heart:before { content: "\f004"; }
+.fa-globe:before { content: "\f0ac"; }
+.fa-bolt:before { content: "\f0e7"; }
+.fa-leaf:before { content: "\f06c"; }
+.fa-plus:before { content: "\f067"; }
+.fa-xmark:before { content: "\f00d"; }
+.fa-arrow-right:before { content: "\f061"; }
+.fa-facebook:before { content: "\f09a"; }
+.fa-twitter:before { content: "\f099"; }
+.fa-linkedin:before { content: "\f0e1"; }
